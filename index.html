@@ -9,30 +9,34 @@
         }
         body{
             background-image:url("./scroll_background.png");
-            background-color: #f4ecd8; /* fallback */
+            background-color: #f4ecd8;
         }
-        .title {
+
+        .banner {
             background-color: #a23f3a;
             display: flex;
-            justify-content: space-between; /* espace entre texte et logo */
-            align-items: stretch; /* fait que le logo prend toute la hauteur */
-            padding: 0 20px; /* padding horizontal */
-            height: 120px; /* hauteur du bandeau */
         }
-
-        .title h1 {
+        .title {
             color: white;
-            margin: auto 0; /* centre verticalement le texte */
+            margin: auto 0;
+            padding-left: 20px;
+        }
+
+        .title .main {
             font-size: 2em;
+            font-weight: bold;
+            font-family: "Arial Narrow", Arial, sans-serif;
         }
-
         .logo {
-            height: 100%; /* prend la hauteur du bandeau */
-        }
+            height: 100%;
+            min-height: 120px;
+            margin-left: auto;
+            margin-right: 10px;
 
+        }
         .logo img {
-            height: 100%; /* prend toute la hauteur du conteneur */
-            width: auto;   /* garde les proportions */
+            height: 100%;
+            width: auto;
         }
     </style>
 </head>
@@ -42,14 +46,15 @@
         <a href="code_of_conduct.html">Charte de conduite</a>
     </div>
     <div style="margin-left: auto;margin-right: auto;max-width: 70em;">
-        <div class="title">
-            <h1 id="les-40-ans-du-gobelin-fanatique">Les 40 ans du Gobelin Fanatique</h1>
+        <div class="banner">
+            <div class="title">
+                <div class="main">Les 40 ans du Gobelin Fanatique</div>
+                <div class="subtitle">Venez fêter notre anniversaire et plonger dans l’univers fascinant des JEUX DE RÔLE !</div>
+            </div>
             <div class="logo">
                 <img src="./logo_color.png" alt="Logo du gobelin fanatique">
             </div>
         </div>
-
-        <p>Venez fêter notre anniversaire et plonger dans l’univers fascinant des JEUX DE RÔLE !</p>
 
         <h2 id="découverte-du-jeu-de-rôle">Découverte du jeu de rôle</h2>
 
